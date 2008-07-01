@@ -1,0 +1,3 @@
+[submodule "tasks/raggi_rake_generic"]
+	path = tasks/raggi_rake_generic
+	url = git://github.com/raggi/raggi_rake_generic
