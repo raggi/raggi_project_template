@@ -13,7 +13,8 @@ GSpec = Gem::Specification.new do |s|
   s.homepage = 'http://github.com/raggi/raggi_project_template'
   s.rubyforge_project = nil
 
-  s.version = Time.now.strftime("%Y.%m.%d") + ENV['VERSION_APPEND']
+  s.version = Time.now.strftime("%Y.%m.%d")
+  s.version += ENV['VERSION_APPEND'] if ENV['VERSION_APPEND']
 
   s.files = %w(Rakefile) + Dir.glob("{bin,docs,lib,spec,test,scripts,tasks}/**/*")
 
